@@ -1,4 +1,4 @@
-package tp2;
+package tp1;
 public class binarysearch {
 
     public static int binarySearch(int[] array, int element) {

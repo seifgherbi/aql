@@ -1,6 +1,8 @@
-package tp2;
+package tp1;
 
 import org.junit.jupiter.api.Test;
+import tp1.RomanNumeral;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RomanNumeralTest {
@@ -30,4 +32,3 @@ public class RomanNumeralTest {
         assertThrows(IllegalArgumentException.class, () -> RomanNumeral.toRoman(4000)); // Nombres supérieurs à 3999
     }
 }
-l

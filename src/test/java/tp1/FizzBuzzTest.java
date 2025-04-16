@@ -1,5 +1,7 @@
+package tp1;
+
 import org.junit.jupiter.api.Test;
-import tp2.FizzBuzz;
+import tp1.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 
