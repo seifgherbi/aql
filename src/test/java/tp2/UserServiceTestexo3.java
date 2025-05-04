@@ -18,7 +18,7 @@ public class UserServiceTestexo3 {
     // 📝 SCENARIO 1 : Lever une exception lors de la création de l'utilisateur avec l’exception
     @Test
     public void testCreerUtilisateur_Echec() throws ServiceException {
-        Utilisateur utilisateur = new Utilisateur("Jean", "Dupont", "jean@email.com");
+        Utilisateur utilisateur = new Utilisateur("GHERBI", "SEIF", "SEIF@email.com");
 
 
         doThrow(new ServiceException("Echec de la création de l'utilisateur"))
@@ -66,7 +66,7 @@ public class UserServiceTestexo3 {
     public void testCreerUtilisateur_ArgumentCapture() throws ServiceException {
         Utilisateur utilisateur = new Utilisateur("GHERBI", "SEIF", "SEIF@email.com");
 
-        // Simuler la réponse
+
         when(utilisateurApiMock.creerUtilisateur(any(Utilisateur.class))).thenReturn(123);
 
         UserService userService = new UserService(utilisateurApiMock);
