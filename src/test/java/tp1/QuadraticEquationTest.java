@@ -2,7 +2,7 @@ package tp1;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import tp1.QuadraticEquation;
+
 
 public class QuadraticEquationTest {
 

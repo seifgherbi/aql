@@ -21,6 +21,14 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
         <!-- JUnit 5 API -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -103,6 +111,19 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version> <!-- Version compatible JUnit 5 -->
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
+
     </build>
 </project>
